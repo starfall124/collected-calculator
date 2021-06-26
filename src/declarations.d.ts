@@ -1,3 +1,5 @@
+import { ISetOperand } from './types/calculator'
+
 declare module '*.png'
 declare module '*.svg' {
   const content: string
@@ -5,5 +7,5 @@ declare module '*.svg' {
 }
 type ActionRedux = {
   type: string
-  payload?: any
+  payload?: ISetOperand
 }
